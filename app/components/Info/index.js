@@ -39,7 +39,7 @@ export default function Info(){
     
     return(
       <>
-        <section className="flex flex-col h-1/2 sm:h-full justify-center items-center w-full ">
+        <section className="flex flex-col p-4 h-1/2 sm:h-full justify-center items-center w-full ">
  
             <div className="flex flex-col sm:items-center sm:justify-center w-full h-full">
               <div className="flex flex-col items-start p-4 gap-4 sm:p-6 sm:gap-6">
@@ -52,7 +52,7 @@ export default function Info(){
               </form>
             </div>
       </section>
-      <section className="flex h-full w-full p-1 sm:h-3/4 ">
+      <section className="flex h-full w-full p-4 sm:h-3/4 ">
           {!steamIds ? ( 
             <div className="flex w-full h-full border-double border-4 border-gray-600 backdrop-blur-xl">
                 <div className="flex w-full items-center justify-center">
