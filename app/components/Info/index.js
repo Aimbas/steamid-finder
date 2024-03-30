@@ -12,7 +12,7 @@ export default function Info(){
 
     const get_steamid = async (id) => {        
  
-        const response = await fetch(`http://localhost:3001/get_steam_id?id=${id}`);
+        const response = await fetch(`https://steamid-finder-b.vercel.app/get_steam_id?id=${id}`);
         const newData = await response.json();
         setSteamIds(newData)
 
@@ -60,9 +60,10 @@ export default function Info(){
                 </div>
             </div>
           ) : (
-            <div className="flex w-full h-full border-double border-4  border-gray-600 backdrop-blur-xl">
-              <div className="flex w-full items-center justify-center">
-                <p className="text-white text-opacity-35">STEAMID: {steamIds.steamid}</p>
+            <div className="flex w-full h-full items-center justify-center border-double border-4  border-gray-600 backdrop-blur-xl">
+              <div className="flex flex-col w-full h-full items-center justify-center gap-4 m-4">
+                <p className="text-white text-left text-sm text-opacity-35">SteamID 64: {steamIds.steamid64}</p>
+                <p className="text-white text-left text-sm text-opacity-35">SteamID Hex: {steamIds.steamid_hex}</p>
               </div>
             </div>
           )}
