@@ -48,7 +48,7 @@ export default function Info(){
                 <p className="text-sm text-gray-400 ">3. Send your profile and wait</p>
               </div>
               <form onSubmit={handleSubmit} id="profile_form" name="profile_form" className="flex w-full justify-center items-center p-6">
-                <input type="url" className="w-full sm:w-3/4 px-2 py-1 xl:w-1/2 text-sm text-center rounded-md" placeholder="www.steam.com/profile"	 id="profile_input" name="profile_input" required minLength="4" size="10" />
+                <input type="url" className="w-full focus:outline-none sm:w-3/4 px-2 py-1 xl:w-1/2 text-sm text-center rounded-md" placeholder="www.steam.com/profile"	 id="profile_input" name="profile_input" required minLength="4" size="10" />
               </form>
             </div>
       </section>
